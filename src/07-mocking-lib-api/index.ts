@@ -7,8 +7,8 @@ const getDataFromApi = async (relativePath: string) => {
   const axiosClient = axios.create({
     baseURL: 'https://jsonplaceholder.typicode.com',
   });
-
   const response = await axiosClient.get(relativePath);
+
   return response.data;
 };
 
