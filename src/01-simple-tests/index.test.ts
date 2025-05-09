@@ -11,9 +11,9 @@ describe('simpleCalculator tests', () => {
 
   test('should subtract two numbers', () => {
     // Write your test here
-    const [a, b] = [5, 10];
-    const result = simpleCalculator({ a: a, b: b, action: Action.Add });
-    expect(result).toBe(a + b);
+    const [a, b] = [10, 5];
+    const result = simpleCalculator({ a: a, b: b, action: Action.Subtract });
+    expect(result).toBe(a - b);
   });
 
   test('should multiply two numbers', () => {
